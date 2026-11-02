@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="240" fill="#ffffff" />
+  <circle cx="250" cy="250" r="222" fill="#14532d" />
+  <circle cx="250" cy="250" r="130" fill="#dce3c3" stroke="#14532d" stroke-width="5" />
+  <path d="M 180,150 H 205 L 220,250 H 335 C 348,250 355,238 350,225 L 335,180 C 330,165 318,160 305,160 H 225 L 220,150 Z" fill="#facc15" />
+  <path d="M 245,178 H 305 V 200 H 245 Z M 245,212 H 315 V 238 H 245 Z" fill="#2d2b12" />
+  <circle cx="225" cy="282" r="20" fill="#facc15" />
+  <circle cx="315" cy="282" r="20" fill="#facc15" />
+  <text x="250" y="70" font-family="sans-serif" font-weight="900" font-size="42" fill="#facc15" text-anchor="middle">BIB EDIBLES</text>
+  <text x="250" y="460" font-family="sans-serif" font-weight="900" font-size="42" fill="#facc15" text-anchor="middle">'N' MART</text>
+</svg>

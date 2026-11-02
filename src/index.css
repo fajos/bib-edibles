@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+  }
+}
+
+.bg-pattern {
+  background-color: #0f291e;
+  background-image: radial-gradient(#15803d 1px, transparent 1px);
+  background-size: 24px 24px;
+}

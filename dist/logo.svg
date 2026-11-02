@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Text Paths for Circular Text -->
+    <path id="topArcPath" d="M 85,250 A 165,165 0 1,1 415,250" fill="none" />
+    <path id="bottomArcPath" d="M 415,250 A 165,165 0 0,1 85,250" fill="none" />
+
+    <!-- Drop Shadow for Cart -->
+    <filter id="cartShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Radial Gradient for inner backdrop -->
+    <radialGradient id="centerBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e2e8cc"/>
+      <stop offset="80%" stop-color="#cfd8ad"/>
+      <stop offset="100%" stop-color="#bdc995"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Black Ring -->
+  <circle cx="250" cy="250" r="248" fill="#000000" />
+
+  <!-- White Ring Border -->
+  <circle cx="250" cy="250" r="240" fill="#ffffff" />
+
+  <!-- Main Dark Green Circle -->
+  <circle cx="250" cy="250" r="222" fill="#14532d" />
+
+  <!-- Outer Yellow Accent Ring -->
+  <circle cx="250" cy="250" r="222" fill="none" stroke="#facc15" stroke-width="4" />
+
+  <!-- Inner Center Backdrop Circle for Cart -->
+  <circle cx="250" cy="250" r="130" fill="url(#centerBg)" stroke="#14532d" stroke-width="5" />
+
+  <!-- Center Stylized Yellow Shopping Cart 'B' Icon -->
+  <g filter="url(#cartShadow)">
+    <!-- Cart Handle & Basket Frame -->
+    <path d="M 145,150 L 180,150 L 195,245 L 340,245 C 350,245 355,235 350,220 L 335,180 C 332,170 322,165 310,165 L 235,165 C 225,165 220,172 220,180 L 220,200 L 315,200 M 220,200 L 220,225 L 325,225"
+          fill="none" stroke="#f59e0b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Solid Cart Base / B Body -->
+    <path d="M 180,150 H 205 L 220,250 H 335 C 348,250 355,238 350,225 L 335,180 C 330,165 318,160 305,160 H 225 L 220,150 Z"
+          fill="#facc15" stroke="#332200" stroke-width="2" />
+
+    <!-- 'B' Inner Loop cutouts in cart -->
+    <path d="M 245,178 H 305 C 312,178 318,182 315,190 C 312,198 306,200 300,200 H 245 Z" fill="#2d2b12" />
+    <path d="M 245,212 H 315 C 322,212 328,218 325,228 C 322,236 315,238 308,238 H 245 Z" fill="#2d2b12" />
+
+    <!-- Cart Wheels -->
+    <circle cx="225" cy="282" r="22" fill="#facc15" stroke="#14532d" stroke-width="4" />
+    <circle cx="225" cy="282" r="8" fill="#14532d" />
+
+    <circle cx="315" cy="282" r="22" fill="#facc15" stroke="#14532d" stroke-width="4" />
+    <circle cx="315" cy="282" r="8" fill="#14532d" />
+  </g>
+
+  <!-- Top Arched Text: BIB EDIBLES -->
+  <text font-family="'Arial Black', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="44" fill="#facc15" letter-spacing="4">
+    <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">BIB EDIBLES</textPath>
+  </text>
+
+  <!-- Bottom Arched Text: 'N' MART -->
+  <text font-family="'Arial Black', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="44" fill="#facc15" letter-spacing="4">
+    <textPath href="#bottomArcPath" startOffset="50%" text-anchor="middle">'N' MART</textPath>
+  </text>
+
+  <!-- Bottom Tagline Box: Healthy foodstuffs at their best -->
+  <g transform="translate(250, 415)">
+    <rect x="-140" y="-18" width="280" height="32" fill="#14532d" stroke="#facc15" stroke-width="3" rx="4" />
+    <text x="0" y="4" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="16" fill="#facc15" text-anchor="middle" letter-spacing="0.5">
+      Healthy foodstuffs at their best
+    </text>
+  </g>
+</svg>
